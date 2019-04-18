@@ -18,9 +18,9 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
     "@ember/optional-features": "^0.7.0",
     "@glimmer/component": "^0.14.0-alpha.3",
+    "babel-eslint": "^8.0.2",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.2.20",
     "ember-cli": "github:ember-cli/ember-cli#9ce45374e840d5da144c882373d1e1692d9cfd89",
@@ -49,5 +49,8 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
+  },
+  "dependencies": {
+    "active-model-adapter": "^2.2.0"
   }
 }

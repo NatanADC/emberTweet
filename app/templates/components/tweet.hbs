@@ -1,0 +1,13 @@
+<div class="tweet-wrapper row">
+	
+	<div class="column ">
+		<div class="row">
+			<p class="user-name">
+				{{if @data.userName @data.userName 'Yvone'}}
+			</p>
+			<span class="timestamp">{{@data.createdAt}}</span>
+		</div>
+		<div >{{@data.description}}</div>
+	</div>
+</div>
+

@@ -1,0 +1,21 @@
+<div class="card">
+	
+	<div class="flex column full-width">
+		<div class="flex row justify-content-space-between">
+			<div class="flex row">
+				<div class="margin-right">
+					<div class="bold white">
+						{{@tweet.userName}}
+					</div>
+				</div>
+				<div class="grey">
+					{{moment-format @tweet.createdAt 'DD/MM/YYYY, HH:mm'}}
+				</div>
+			</div>
+
+		</div>
+		<div class="white">
+			{{@tweet.description}}
+		</div>
+	</div>
+</div>
