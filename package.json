@@ -1,13 +1,15 @@
 {
-  "name": "twitter-app",
+  "name": "app-2",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for twitter-app goes here",
-  "repository": "",
+  "description": "Small description for app-2 goes here",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerhard1902/ember-octane.git"
+  },
   "license": "MIT",
   "author": "",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -20,6 +22,7 @@
   "devDependencies": {
     "@ember/optional-features": "^0.7.0",
     "@glimmer/component": "^0.14.0-alpha.3",
+    "active-model-adapter": "^2.2.0",
     "babel-eslint": "^8.0.2",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.2.20",
@@ -50,7 +53,9 @@
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
   },
-  "dependencies": {
-    "active-model-adapter": "^2.2.0"
-  }
+  "main": ".ember-cli.js",
+  "bugs": {
+    "url": "https://github.com/Gerhard1902/ember-octane/issues"
+  },
+  "homepage": "https://github.com/Gerhard1902/ember-octane#readme"
 }

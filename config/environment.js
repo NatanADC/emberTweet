@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'twitter-app',
+    modulePrefix: 'app-2',
     environment,
     rootURL: '/',
     locationType: 'auto',

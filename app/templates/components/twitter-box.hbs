@@ -1,14 +1,13 @@
-<form >
-  <input type="text"
-  class='input-field'
-  placeholder="Whats happening"
-  oninput={{action this.handleChange value="target.value"}}
-  value={{this.text}}
-  />
-  <button
-  {{action this.handleSubmit}}
-  on="submit"
-  >
-    Tweet
-  </button>
-</form>
+ <form action>
+ 	<input type="text" placeholder="What´s happening"
+ 	value={{this.text}}
+ 	oninput={{action this.handleChange value="target.value"}}
+ 	>
+
+
+ 	<button {{action this.handleSubmit}}
+ 	>
+ 		Tweet
+ 	</button>
+
+ </form>

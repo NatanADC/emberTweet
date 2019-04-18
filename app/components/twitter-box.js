@@ -1,26 +1,27 @@
 import Component from '@glimmer/component';
-import { action } from '@ember/object';
-import { tracked } from '@glimmer/tracking';
+import {tracked} from "@glimmer/tracking";
+import {action} from "@ember/object"
 
 export default class TwitterBoxComponent extends Component {
-  @tracked text;
-  @tracked error;
+	@tracked text;  
+	@tracked error;
 
-  @action
-  handleChange(text){
-    this.text = text;
-    this.error = false;
-  }
+	@action
+	onInput(value){
+		this.error=false;
+		this.text=value;
+	}
+	@action handleChange (text)
+	{	
+		console.log(text);
+		this.text= text;
+	}
+	@action handleSubmit (){ 
+		let newText=this.text;
+		
+		let req= this.args.handleSubmit(newText); 
+		this.error=req.error;
+		this.text= "";
 
-  @action
-  async handleSubmit() {
-    // if(this.args.onSubmit) {
-      let newText = this.text;
-      let req = await this.args.onSubmit(newText);
-      this.error = req.error;
-      this.text = '';
-    // }
-    // else
-    //  alert('handleSubmit');  
-  } 
+	}
 }

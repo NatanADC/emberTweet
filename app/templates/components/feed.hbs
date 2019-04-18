@@ -1,0 +1,14 @@
+{{log this.tweets}}
+<div>
+
+	{{#each this.tweets as |tweet|}}
+		<TweetCard
+			@tweet={{tweet}}
+		/>
+	{{else}}
+	No hay Tweets
+	{{/each}}
+</div>
+
+
+

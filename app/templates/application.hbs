@@ -1,13 +1,8 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<h1>Twitter</h1>
-
-<h2>Input text box</h2>
-
+<h1>twitter</h1>
 <TwitterBox 
 	@handleSubmit={{this.onSubmit}}
 />
-
-<h2>Feed Component</h2>
-<Feed1
-  @tweets = {{this.model}}
+<Feed 
+@tweets={{this.model}}
 />
+{{outlet}}
